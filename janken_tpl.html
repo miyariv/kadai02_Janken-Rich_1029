@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん</title>
+    <link rel="stylesheet" href="css/sample.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- <h1>じゃんけん</h1> -->
+    </header>
+
+    <!-- <main>
+        <ul>
+            <li id="gu_btn">グー</li>
+            <li id="cho_btn">チョキ</li>
+            <li id="par_btn">パー</li>
+        </ul>
+        <div>コンピュータの出した手は？「<span id="pc_hands">なに？</span>」</div>
+        <div id="judgment">勝ち</div>
+    </main> -->
+
+    <main>
+        <section id="kirikabu" class="kirikabu">
+            <!-- かぶとむし -->
+            <div class="kabutos">
+                <div class="my-kabuto-wrapper">
+                    <img id="my-kabuto" src="img/kabuto_1.png" alt="自分のカブトムシ">
+                    <div id="life-frame" class="life-frame">
+                        <div id="my-life-bar" class="life-bar"></div>
+                        <div id="my-life-mark" class="life-mark"></div>
+                    </div>
+                    <p class="text-center hp-text">自分の体力：<span id="my_hp">100</span></p>
+                </div>
+                <div class="pc-kabuto-wrapper">
+                    <img id="pc-kabuto" src="img/kabuto_2.png" alt="相手のカブトムシ">
+                    <div id="life-frame" class="life-frame">
+                        <div id="pc-life-bar" class="life-bar"></div>
+                        <div id="pc-life-mark" class="life-mark"></div>
+                    </div>
+                    <p class="text-center hp-text">相手の体力：<span id="pc_hp">100</span></p>
+                </div>
+                
+                
+            </div>
+            <!-- 残り体力 -->
+            <div class="hp"></div>
+
+
+
+
+        </section>
+
+        <section id="hand_section" class="hand_seciton">
+            <div class="hand-wrapper">
+                <div class="display_hands">
+                    <div class="my_hands">
+                        <p class="text-center hand-list_text">自分</p>
+                        <ul class="hand-list">
+                            <li id="gu_btn" class="hand">
+                                <div>
+                                    <img src="img/goo.jpeg" id="my_gu_img" class="hand_img">
+                                    <p class="text-center hand-text">必殺技！</p>
+                                </div>
+                            </li>
+                            <li id="cho_btn" class="hand">
+                                <img src="img/cho.jpeg" id="my_cho_img" class="hand_img">
+                            </li>
+                            <li id="par_btn" class="hand">
+                                <img src="img/par.jpeg" id="my_par_img" class="hand_img">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pc_hands">
+                        <p class="text-center hand-list_text">あいて</p>
+                        <ul class="hand-list">
+                            <li id="pc_gu_btn" class="hand">
+                                    <img src="img/goo.jpeg" id="pc_gu_img" class="hand_img">
+                            </li>
+                            <li id="pc_cho_btn" class="hand">
+                                    <img src="img/cho.jpeg" id="pc_cho_img" class="hand_img">
+                            </li>
+                            <li id="pc_par_btn" class="hand">
+                                <div>
+                                    <img src="img/par.jpeg" id="pc_par_img" class="hand_img">
+                                    <p class="text-center hand-text">必殺技！</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <div>コンピュータの出した手は？「<span id="pc_hands">なに？</span>」</div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="judgement-section">
+                <div class="judgement-wrapper text-center">
+                    <p id="judgement">勝ち</p>
+                </div>
+            </section> -->
+        </div>
+    </main>
+
+
+
+
+    <footer></footer>
+
+    <!-- jQuery, js読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jrumble.1.3.js"></script>
+    <script src="js/test.js"></script>
+    
+</body>
+
+</html>

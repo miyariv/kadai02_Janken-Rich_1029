@@ -1,0 +1,167 @@
+/* 初期設定 */
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+main{
+    border-bottom:1px solid #ccc;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+/* p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+} */
+
+.text-center{
+    text-align: center;
+}
+
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+
+/* li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;
+    cursor: pointer;
+} */
+
+/* li:hover{
+    background: #0066CC;
+    color:#fff;
+} */
+
+/* kirikabu */
+.kabutos{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #deb887;
+}
+
+.hp-text{
+    margin-top: 0;
+}
+
+/* 点滅のためのclass */
+.custom-blink {
+    animation: blink-fast .1s linear infinite;
+  }
+@keyframes blink-fast {
+0% {
+    opacity: 0;
+}
+20% {
+    opacity: 1;
+}
+}
+
+
+/* HPゲージ */
+.life-frame {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(10, 0, 50, 0.6);
+    display: flex;
+    padding: 2px 2px;
+}
+
+.life-bar {
+    height: 3px;
+    background-color: rgb(0, 255, 255);
+    transition: 300ms
+}
+
+.life-mark {
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    filter: saturate(500%);
+    box-shadow: 0 0 5px 3px rgb(200, 255, 255),
+                0 0 7px 7px rgb(100, 255, 255);
+}
+
+.hp-text{
+    font-size: 18px;
+}
+
+/* hand_section */
+
+.hand-text{
+    font-size: 24px;
+    margin: 10px auto;
+    color: red;
+}
+
+.hand-wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+.display_hands{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hand_img{
+    width: 150px;
+    height: auto;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.hand_img:hover{
+    width: 160px;
+}
+
+/* 選択されたときに表示大きく */
+.hand-list .hand .hand_img_big{
+    width: 190px;
+}
+
+
+.hand-list{
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.hand-list_text{
+    margin: 30px auto 20px;
+}
+
+/* judgement-section */
+.judgement-wrapper{
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
