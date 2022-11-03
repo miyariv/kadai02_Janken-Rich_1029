@@ -1,0 +1,1 @@
+# kadai02_Janken-Rich_1029
